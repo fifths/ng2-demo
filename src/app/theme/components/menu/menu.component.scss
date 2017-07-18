@@ -1,0 +1,60 @@
+@import '../../scss/layout';
+
+/* Sidebar navigation */
+ul {
+  display: block;
+  list-style-type: none;
+  padding: 0;
+}
+.nav {
+  font-size: 14px;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.nav > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.nav > li > a i {
+  margin-right: 5px;
+  font-size: 16px;
+}
+.nav > li.active > a,  .nav > li.active > a:hover {
+  background-color: #5cb85c !important;
+  color: #fff !important;
+}
+.active a{
+  color:#fff;
+}
+.nav li a:hover{
+  color: #fff;
+  background-color: #2d363f;
+
+}
+[class^='nav'] li > a, [class*=' nav'] li > a {
+  display: block;
+}
+.nav > li > ul > li a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+.nav > li > a i.arrow {
+  float: right;
+  font-size: 20px;
+  line-height: initial;
+  transition: all 0.3s ease;
+}
+.collapse {
+  display: none;
+}
+.collapse.in {
+  display: block;
+}

@@ -1,1 +1,1 @@
-# ng2-demo
+#ng2-jwt-demo
