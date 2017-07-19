@@ -4,6 +4,7 @@ import {routing} from './pages.routing';
 import {NgAllModule} from '../theme/ngall.module';
 import {PagesComponent} from './pages.component';
 import {LoginGuard} from '../theme/services/login-guard.service';
+import {HttpService} from '../theme/services/http.service';
 
 @NgModule({
   imports: [
@@ -12,7 +13,7 @@ import {LoginGuard} from '../theme/services/login-guard.service';
     routing
   ],
   declarations: [PagesComponent],
-  providers: [LoginGuard]
+  providers: [LoginGuard, HttpService]
 })
 export class PagesModule {
 }
