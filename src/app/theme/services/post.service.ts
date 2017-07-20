@@ -13,6 +13,8 @@ export class PostService {
   }
 
   list() {
+    this.httpService.setDefaultHeader();
+    this.httpService.setToken();
     return this.httpService.get(config.url + '/api/post').map(response => response);
   }
 }

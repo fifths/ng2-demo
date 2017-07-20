@@ -8,8 +8,6 @@ export class HttpService {
 
   constructor(private http: Http) {
     this.http_options = new RequestOptions({});
-    this.setDefaultHeader();
-    this.setToken();
   }
 
   // get
@@ -49,7 +47,6 @@ export class HttpService {
   }
 
   setToken() {
-    const token = localStorage.getItem('token');
-    this.http_options.headers.append('Authorization', 'Bearer ' + token);
+    this.http_options.headers.append('Authorization', 'Bearer ' + localStorage.getItem('token'));
   }
 }
